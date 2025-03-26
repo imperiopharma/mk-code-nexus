@@ -5,7 +5,7 @@ import AnimatedTitle from '@/components/AnimatedTitle';
 import GlowButton from '@/components/GlowButton';
 import SkillTag from '@/components/SkillTag';
 import ProjectCard from '@/components/ProjectCard';
-import { Github, Linkedin, MessageSquare, FileText, Javascript, Database, Webhook, Api } from 'lucide-react';
+import { Github, Linkedin, MessageSquare, FileText, Code, Database, Webhook, Globe } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -47,7 +47,6 @@ const Index = () => {
             href="https://github.com" 
             icon={<Github size={18} />}
             className="animate-fadeIn opacity-0"
-            style={{ animationDelay: '1400ms' }}
           >
             GitHub
           </GlowButton>
@@ -55,7 +54,6 @@ const Index = () => {
             href="https://linkedin.com" 
             icon={<Linkedin size={18} />}
             className="animate-fadeIn opacity-0"
-            style={{ animationDelay: '1500ms' }}
           >
             LinkedIn
           </GlowButton>
@@ -63,7 +61,6 @@ const Index = () => {
             href="https://wa.me/1234567890" 
             icon={<MessageSquare size={18} />}
             className="animate-fadeIn opacity-0"
-            style={{ animationDelay: '1600ms' }}
           >
             WhatsApp
           </GlowButton>
@@ -71,7 +68,6 @@ const Index = () => {
             href="#" 
             icon={<FileText size={18} />}
             className="animate-fadeIn opacity-0"
-            style={{ animationDelay: '1700ms' }}
           >
             Portfólio
           </GlowButton>
@@ -83,12 +79,12 @@ const Index = () => {
             <span className="border-b-2 border-mk-blue pb-1">Skills</span>
           </h3>
           <div className="flex flex-wrap justify-center gap-3">
-            <SkillTag name="JavaScript" icon={<Javascript size={14} />} className="animate-fadeIn" delay={1900} />
-            <SkillTag name="Node.js" icon={<Javascript size={14} />} className="animate-fadeIn" delay={2000} />
-            <SkillTag name="OpenAI" icon={<Api size={14} />} className="animate-fadeIn" delay={2100} />
+            <SkillTag name="JavaScript" icon={<Code size={14} />} className="animate-fadeIn" delay={1900} />
+            <SkillTag name="Node.js" icon={<Code size={14} />} className="animate-fadeIn" delay={2000} />
+            <SkillTag name="OpenAI" icon={<Globe size={14} />} className="animate-fadeIn" delay={2100} />
             <SkillTag name="Baileys" icon={<MessageSquare size={14} />} className="animate-fadeIn" delay={2200} />
-            <SkillTag name="APIs" icon={<Api size={14} />} className="animate-fadeIn" delay={2300} />
-            <SkillTag name="FastAPI" icon={<Api size={14} />} className="animate-fadeIn" delay={2400} />
+            <SkillTag name="APIs" icon={<Globe size={14} />} className="animate-fadeIn" delay={2300} />
+            <SkillTag name="FastAPI" icon={<Globe size={14} />} className="animate-fadeIn" delay={2400} />
             <SkillTag name="Webhooks" icon={<Webhook size={14} />} className="animate-fadeIn" delay={2500} />
             <SkillTag name="SQLite" icon={<Database size={14} />} className="animate-fadeIn" delay={2600} />
           </div>
